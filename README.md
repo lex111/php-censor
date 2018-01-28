@@ -1,7 +1,6 @@
 [![PHP Censor](http://ci.php-censor.info/build-status/image/2?branch=master&label=PHPCensor&style=flat-square)](http://ci.php-censor.info/build-status/view/2?branch=master)
 [![Travis CI](https://img.shields.io/travis/php-censor/php-censor/master.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/php-censor/php-censor?branch=master)
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/26f28bee-a861-45b2-bc18-ed2ac7defd22.svg?label=Insight&style=flat-square)](https://insight.sensiolabs.com/projects/26f28bee-a861-45b2-bc18-ed2ac7defd22)
-[![Codecov](https://img.shields.io/codecov/c/github/php-censor/php-censor.svg?label=Codecov&style=flat-square)](https://codecov.io/gh/php-censor/php-censor)
 [![Latest Version](https://img.shields.io/packagist/v/php-censor/php-censor.svg?label=Version&style=flat-square)](https://packagist.org/packages/php-censor/php-censor)
 [![Total downloads](https://img.shields.io/packagist/dt/php-censor/php-censor.svg?label=Downloads&style=flat-square)](https://packagist.org/packages/php-censor/php-censor)
 [![License](https://img.shields.io/packagist/l/php-censor/php-censor.svg?label=License&style=flat-square)](https://packagist.org/packages/php-censor/php-censor)
@@ -46,7 +45,7 @@ More [screenshots](docs/en/screenshots.md).
 
 ## Features
 
-* Clone project from Github, Bitbucket, Gitlab, Git, Mercurial, SVN or from local directory;
+* Clone project from GitHub, Bitbucket, GitLab, Git, Mercurial, SVN or from local directory;
 
 * Set up and tear down database tests for [PostgreSQL](docs/en/plugins/pgsql.md), [MySQL](docs/en/plugins/mysql.md) or 
 [SQLite](docs/en/plugins/sqlite.md);
@@ -61,7 +60,7 @@ PHPMessDetect, PHPTalLint and TechnicalDept;
 * Run through any combination of the other [supported plugins](docs/en/README.md#plugins), including Campfire, CleanBuild, 
 CopyBuild, Deployer, Env, Git, Grunt, Gulp, PackageBuild, Phar, Phing, Shell and Wipe;
 
-* Send notifications on Email, XMPP, Slack, IRC, Flowdock, HipChat and [Telegram](https://github.com/LEXASOFT/PHP-Censor-Telegram-Plugin);
+* Send notifications on Ewmail, XMPP, Slack, IRC, Flowdock, HipChat and [Telegram](https://github.com/LEXASOFT/PHP-Censor-Telegram-Plugin);
 
 * Use your LDAP-server for authentication;
 
@@ -79,10 +78,10 @@ cd /var/www
 composer create-project php-censor/php-censor php-censor.local --keep-vcs
 ```
 
-Or download [latest archive](https://github.com/php-censor/php-censor/releases/latest) from Github, unzip it and run 
+Or download [latest archive](https://github.com/php-censor/php-censor/releases/latest) from GitHub, unzip it and run 
 `composer install`.
 
-* Create empty database for application (Mysql/MariaDB or Postgres);
+* Create empty database for application (MySQL/MariaDB or PostgreSQL);
 
 * Install Beanstalkd Queue (Optional, if you are going to use queue with Worker):
 
@@ -227,8 +226,8 @@ cd /path/to/php-censor
 
 For Phar plugin tests set 'phar.readonly' setting to Off (0) in `php.ini` config. Otherwise tests will be skipped.  
 
-For database B8Framework tests create empty 'b8_test' database on 'localhost' with user/password: `root/<empty>'` 
-for MySQL and with user/password: `postgres/<empty>'` for PostgreSQL (You can change default test user, password and 
+For database B8Framework tests create empty 'b8_test' database on 'localhost' with user/password: `root/<empty>` 
+for MySQL and with user/password: `postgres/<empty>` for PostgreSQL (You can change default test user, password and 
 database name in `phpunit.mysql|pgsql.xml` config). If connection failed tests will be skipped.
 
 ## Documentation
